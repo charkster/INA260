@@ -27,7 +27,7 @@ class INA260:
 		return vbus
 
 	def get_current(self):
-		raw_read = self.i2c.read_i2c_block_data(self.dev_address,self._INA260_BUS_VOLTAGE_ADDR,2)
+		raw_read = self.i2c.read_i2c_block_data(self.dev_address,self._INA260_CURRENT_ADDR,2)
 		word_rdata = raw_read[0] *256 + raw_read[1]
 		current_twos_compliment = word_rdata
 		current_sign_bit = current_twos_compliment >> 15
