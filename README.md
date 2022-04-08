@@ -1,4 +1,6 @@
 # INA260
+![picture](https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/a0f601ef2c4a887e5ef29240891e0e13/large.png)
+
 Texas Instruments INA260 Python driver
 
 INA260_MINIMAL.py is a bare-bones driver for requesting voltage and current values. It was purposefully made as short as possible.
